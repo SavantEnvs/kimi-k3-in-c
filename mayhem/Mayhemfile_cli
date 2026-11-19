@@ -1,0 +1,9 @@
+project: savantenvs/kimi-k3-in-c
+target: cli
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cli/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_cli @@
+    afl: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/kimi-k3-in-c
+target: tok-encode
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tok-encode/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tok_encode
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/kimi-k3-in-c
+target: json
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/json/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_json
+    libfuzzer: true
+    timeout: 10

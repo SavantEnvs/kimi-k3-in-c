@@ -1,0 +1,6 @@
+--ids
+1,2
+--out
+res.json
+--threads
+2

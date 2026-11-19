@@ -1,0 +1,9 @@
+project: savantenvs/kimi-k3-in-c
+target: tok-load
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tok-load/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tok_load @@
+    afl: true
+    timeout: 10

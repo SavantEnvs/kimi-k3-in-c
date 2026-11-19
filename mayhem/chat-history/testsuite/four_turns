@@ -1,0 +1,4 @@
+{"role": "system", "content": "You are helpful."}
+{"role": "user", "content": "Hi \"there\"\n\u00e9"}
+{"role": "assistant", "content": "Hello!", "reasoning_content": "greet"}
+{"role": "user", "content": "Bye"}
